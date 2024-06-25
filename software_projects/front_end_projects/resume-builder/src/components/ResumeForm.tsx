@@ -1,26 +1,41 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { updateName, updateContact, addExperience, addEducation, addSkill } from '../features/resume/resumeSlice';
+import { updateResume } from '../store/actions';
+import './ResumeForm.scss';
 
 const ResumeForm: React.FC = () => {
   const dispatch = useDispatch();
 
-  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    dispatch(updateName(e.target.value));
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    dispatch(updateResume({ [name]: value }));
   };
 
-  // Handle other form changes similarly...
-
   return (
-    <div>
+    <form className="resume-form">
       <label>
         Name:
-        <input type="text" onChange={handleNameChange} />
+        <input type="text" name="name" onChange={handleChange} />
       </label>
-      {/* Add other form fields similarly */}
-    </div>
+      <label>
+        Contact:
+        <input type="text" name="contact" onChange={handleChange} />
+      </label>
+      <label>
+        Education:
+        <textarea name="education" onChange={handleChange}></textarea>
+      </label>
+      <label>
+        Experience:
+        <textarea name="experience" onChange={handleChange}></textarea>
+      </label>
+      <label>
+        Skills:
+        <textarea name="skills" onChange={handleChange}></textarea>
+      </label>
+      <button type="submit">Save</button>
+    </form>
   );
 };
 
 export default ResumeForm;
-
