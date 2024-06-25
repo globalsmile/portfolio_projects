@@ -11,10 +11,10 @@ const ResumePreview: React.FC = () => {
   const handleDownload = () => {
     const input = document.getElementById('resume-preview');
     if (input) {
-      html2canvas(input).then((canvas) => {
+      html2canvas(input).then((canvas: { toDataURL: (arg0: string) => any; width: number; height: number; }) => {
         const imgData = canvas.toDataURL('image/png');
         const pdf = new jsPDF();
-        pdf.addImage(imgData, 'PNG', 0, 0);
+        pdf.addImage(imgData, 'PNG', 0, 0, canvas.width * 0.75, canvas.height * 0.75);
         pdf.save('resume.pdf');
       });
     }
