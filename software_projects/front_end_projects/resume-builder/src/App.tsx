@@ -1,7 +1,7 @@
 import React from 'react';
 import ResumeForm from './components/ResumeForm';
 import ResumePreview from './components/ResumePreview';
-import './styles/global.scss';
+import './styles/App.scss';
 
 const App: React.FC = () => {
   return (
