@@ -14,8 +14,16 @@ const ResumeForm: React.FC = () => {
   return (
     <form className="resume-form">
       <label>
-        Name:
-        <input type="text" name="name" onChange={handleChange} />
+        First Name:
+        <input type="text" name="fname" onChange={handleChange} />
+      </label>
+      <label>
+        Middle Name:
+        <input type="text" name="mname" onChange={handleChange} />
+      </label>
+      <label>
+        Last Name:
+        <input type="text" name="lname" onChange={handleChange} />
       </label>
       <label>
         Contact:
