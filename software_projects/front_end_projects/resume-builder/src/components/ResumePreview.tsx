@@ -49,3 +49,4 @@ const ResumePreview: React.FC = () => {
     </div>
   );
 };
+export default ResumePreview;
