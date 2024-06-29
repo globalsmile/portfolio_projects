@@ -1,31 +1,32 @@
 import React from 'react';
+import './ResumePreview.scss';
 
-type Education = {
+interface Education {
   institution: string;
   degree: string;
   year: string;
-};
+}
 
-type Experience = {
+interface Experience {
   company: string;
   role: string;
   duration: string;
-};
+}
 
-type ResumeState = {
+interface ResumeState {
   name: string;
   contact: string;
   education: Education[];
   experience: Experience[];
   skills: string[];
-};
+}
 
 const ResumePreview: React.FC<{ resume: ResumeState }> = ({ resume }) => {
   return (
-    <div>
-      <h1>{resume.name}</h1>
+    <div className="preview-container">
+      <h1>Resume Preview</h1>
+      <h2>{resume.name}</h2>
       <p>{resume.contact}</p>
-
       <h3>Education</h3>
       {resume.education.map((edu, index) => (
         <div key={index}>
@@ -34,7 +35,6 @@ const ResumePreview: React.FC<{ resume: ResumeState }> = ({ resume }) => {
           <p>{edu.year}</p>
         </div>
       ))}
-
       <h3>Experience</h3>
       {resume.experience.map((exp, index) => (
         <div key={index}>
@@ -43,15 +43,10 @@ const ResumePreview: React.FC<{ resume: ResumeState }> = ({ resume }) => {
           <p>{exp.duration}</p>
         </div>
       ))}
-
       <h3>Skills</h3>
-      <ul>
-        {resume.skills.map((skill, index) => (
-          <li key={index}>{skill}</li>
-        ))}
-      </ul>
-
-      <button onClick={() => alert('Download PDF')}>Download PDF</button>
+      {resume.skills.map((skill, index) => (
+        <p key={index}>{skill}</p>
+      ))}
     </div>
   );
 };
