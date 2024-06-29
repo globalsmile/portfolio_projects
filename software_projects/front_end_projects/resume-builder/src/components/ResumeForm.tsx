@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { updateResume } from '../store/actions';
 import './ResumeForm.scss';
 
+type Section = 'name' | 'contact' | 'education' | 'experience' | 'skills';
 const ResumeForm: React.FC = () => {
   const dispatch = useDispatch();
 
@@ -14,8 +15,13 @@ const ResumeForm: React.FC = () => {
     skills: [''],
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, section: string, index?: number, field?: string) => {
-    const { name, value } = e.target;
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    section: Section,
+    index?: number,
+    field?: string
+  ) => {
+    const { value } = e.target;
     if (index !== undefined && field) {
       const updatedSection = formData[section].map((item, idx) => {
         if (idx === index) return { ...item, [field]: value };
@@ -23,7 +29,7 @@ const ResumeForm: React.FC = () => {
       });
       setFormData({ ...formData, [section]: updatedSection });
     } else {
-      setFormData({ ...formData, [name]: value });
+      setFormData({ ...formData, [section]: value });
     }
   };
 
