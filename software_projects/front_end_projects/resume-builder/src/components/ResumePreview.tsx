@@ -1,5 +1,4 @@
 import React from 'react';
-import { ResumeState } from '../types';
 import './ResumePreview.scss';
 
 interface Education {
