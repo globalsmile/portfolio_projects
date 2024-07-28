@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import ResumeForm from './components/ResumeForm';
 import ResumePreview from './components/ResumePreview';
-import './App.css';
-
+import './App.scss';
 import { ResumeState } from './types';
 
 const App: React.FC = () => {
@@ -20,12 +19,12 @@ const App: React.FC = () => {
 
   return (
     <div className="app">
-      <div className="form-container">
+      <div className="left-side">
         <h1>Resume Builder</h1>
         <p className="instructions">Fill out the form to create your resume</p>
         <ResumeForm onSubmit={handleSubmit} />
       </div>
-      <div className="preview-container">
+      <div className="right-side">
         <h1>Resume Preview</h1>
         <ResumePreview resume={resume} />
       </div>
