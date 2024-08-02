@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./assets/css/index.css">
   <title>Frontend Mentor | Space tourism website</title>
   <script src="./assets/js/navigation.js" defer></script>
+  <script src="./assets/js/tabs.js" defer></script>
 </head>
 <body class="technology">
     <a class="skip-to-content" href="#main">Skip to content</a>
@@ -33,8 +34,62 @@
     </nav>
   </header>
 
-      <main id="main" class="grid-container grid-container--technology flow" >
-        <h1 class="numbered-title"><span aria-hidden="true">03</span>SPACE LAUNCH 101</h1>
+      <main id="main" class=" grid-container--technology flow" >
+        <h1 class="numbered-title-three"><span aria-hidden="true">03</span>SPACE LAUNCH 101</h1>
+        <div class="deter"></div>
+        <div class="number-indicators grid" role="tablist" aria-label="crew member list">
+          <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image" tabindex="0">1</button>
+          <button aria-selected="false" aria-controls="mission-tab" role="tab" data-image="mission-image" tabindex="-1">2</button>
+          <button aria-selected="false" aria-controls="pilot-tab" role="tab" data-image="pilot-image" tabindex="-1">3</button>
+        </div>
+
+        <article class="crew-details flow technology-info" id="commander-tab" role="tabpanel" tabindex="0">
+          <header class="flow flow--space-small">
+            <h2 class="fs-600 ff-serif uppercase">THE TERMINOLOGY...</h2>
+            <p class="fs-700 uppercase ff-serif">LAUNCH VEHICLE</p>
+          </header>
+          <p class="launch">A launch vehicle or carrier rocket is a rocket-propelled vehicle <br> used to carry a 
+            payload from Earth's surface to space, usually to <br> Earth orbit or beyond. Our 
+            WEB-X carrier rocket is the most <br> powerful in operation. Standing 150 metres tall, 
+            it's quite an <br> awe-inspiring sight on the launch pad!</p>
+        </article>
+
+        <article hidden class="crew-details flow technology-info" id="mission-tab" role="tabpanel" tabindex="0">
+          <header class="flow flow--space-small">
+            <h2 class="fs-600 ff-serif uppercase">THE TERMINOLOGY...</h2>
+            <p class="fs-700 uppercase ff-serif">SPACEPORT</p>
+          </header>
+          <p class="launch">A spaceport or cosmodrome is a site for launching (or <br> receiving) spacecraft, 
+            by analogy to the seaport for ships or <br> airport for aircraft. Based in the 
+            famous Cape Canaveral, our <br> spaceport is ideally situated to take advantage 
+            of the Earth’s <br> rotation for launch.</p>
+        </article> 
+
+        <article hidden class="crew-details flow technology-info" id="pilot-tab" role="tabpanel" tabindex="0">
+          <header class="flow flow--space-small">
+            <h2 class="fs-600 ff-serif uppercase">THE TERMINOLOGY </h2>
+            <p class="fs-700 uppercase ff-serif">SPACE VEHICLE</p>
+          </header>
+          <p class="launch">A space capsule is an often-crewed spacecraft that uses a <br> blunt-body reentry 
+            capsule to reenter the Earth's atmosphere <br> without wings. Our capsule is where 
+            you'll spend your time <br> during the flight. It includes a space gym, cinema, 
+            and plenty of <br> other activities to keep you entertained.</p>
+        </article>
+
+        <picture id="commander-image" class="orient">
+          <source srcset="assets/technology/image-launch-vehicle-portrait.jpg" type="image/webp">
+          <img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="Launch Vehicle">
+        </picture>
+        <picture hidden id="mission-image" class="orient">
+          <source srcset="assets/technology/image-spaceport-portrait.jpg" type="image/webp">
+          <img src="./assets/technology/image-spaceport-portrait.jpg" alt="Spaceport">
+        </picture>
+        <picture hidden id="pilot-image" class="orient">
+          <source srcset="assets/technology/image-space-capsule-portrait.jpg" type="image/webp">
+          <img src="./assets/technology/image-space-capsule-portrait.jpg" alt="Space Capsule">
+        </picture>
+
+      </main>
         
 
        
