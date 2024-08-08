@@ -440,7 +440,9 @@ select {
     background-color: hsl( var(--clr-white) / 1);
 }
 
-
+.launch {
+    text-wrap: wrap;
+}
 .number-indicators > * {
     width: 80px;
     height: 80px;
