@@ -342,7 +342,6 @@ select {
         right: 1rem;
         top: 2rem;
         background: transparent;
-        background-image: url(./assets/shared/icon-hamburger.svg);
         background-repeat: no-repeat;
         background-position: center;
         width: 1.5rem;
@@ -440,9 +439,6 @@ select {
     background-color: hsl( var(--clr-white) / 1);
 }
 
-.launch {
-    text-wrap: wrap;
-}
 .number-indicators > * {
     width: 80px;
     height: 80px;
