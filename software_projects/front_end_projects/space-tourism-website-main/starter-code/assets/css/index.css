@@ -312,6 +312,7 @@ select {
     display: none;
 }
 
+
 @media (max-width: 35rem) {
     .primary-navigation {
         --underline-gap: .5rem;
@@ -347,6 +348,7 @@ select {
         width: 1.5rem;
         aspect-ratio: 1;
         border: 0;
+        color: hsl( var(--clr-white) );
     }
     
     .mobile-nav-toggle[aria-expanded="true"] {
@@ -359,6 +361,7 @@ select {
     }
     
 }
+
 
 @media (min-width: 35em) {
     .primary-navigation {
@@ -447,22 +450,6 @@ select {
     color: hsl( var(--clr-white) );
     border: 1px solid hsl( var(--clr-white) );
     background-color: transparent;
-    cursor: pointer;
-    border-radius: 50%;
-    padding: .5em;
-    margin: .2em 4.5em;
-    position: relative;
-    top: 15em;
-}
-
-.technology-info > * {
-    position: relative;
-    left: 5em;
-    top: 8.5em;
-}
-.orient > img {
-    position: relative;
-    left: 5em;
 }
 
 .number-indicators > [aria-selected="true"] {
@@ -473,7 +460,7 @@ select {
 
 .number-indicators > *:hover,
 .number-indicators > *:focus { 
-    background-color: hsl( var(--clr-white));
+    background-color: hsl( var(--clr-white) );
     color: black;
 }
 
@@ -634,6 +621,7 @@ body {
     grid-area: tabs;
 }
 
+
 .grid-container--crew > .crew-details {
     grid-area: content;
 }
@@ -722,9 +710,5 @@ body {
 
 /* technology layout */
 
-
-
-/* how can i remove the extra space caused by the img element
-in the .orient class */
 
 
