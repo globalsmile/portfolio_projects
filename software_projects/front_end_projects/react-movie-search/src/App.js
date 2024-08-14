@@ -1,16 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SearchMovies from "searchMovies";
+/*import logo from './logo.svg';
+import './App.css';
+*/
+import React from "react";
+import SearchMovies from "./searchMovies";
 
-class Main extends React.Component {
-  render() {
-    return (
-      <div className="container">
-        <h1 className="title">React Movie Search</h1>
-        <SearchMovies />
-      </div>
-    );
-  }
+
+function App() {
+  return (
+    /*<div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+    */
+    <div className="container">
+      <h1 className="title">React Movie Search</h1>
+      <SearchMovies />
+    </div>
+  );
 }
 
-ReactDOM.render(<Main />, document.getElementById('root'));
+export default App;
