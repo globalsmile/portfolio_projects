@@ -24,10 +24,19 @@ function App() {
       </header>
     </div>
     */
-    <div className="container">
-      <h1 className="title">React Movie Search</h1>
-      <SearchMovies />
-    </div>
+    <html>
+      <head>
+      </head>
+      <body>
+        <div id="root"></div>
+        <script src="index.pack.js"></script>
+        <div className="container">
+          <h1 className="title">React Movie Search</h1>
+          <SearchMovies />
+        </div>
+      </body>
+    </html>
+
   );
 }
 
