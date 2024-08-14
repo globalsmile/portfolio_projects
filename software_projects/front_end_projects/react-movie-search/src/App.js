@@ -3,6 +3,7 @@ import './App.css';
 */
 import React from "react";
 import SearchMovies from "./searchMovies";
+import "./App.css"
 
 
 function App() {
@@ -28,8 +29,6 @@ function App() {
       <head>
       </head>
       <body>
-        <div id="root"></div>
-        <script src="index.pack.js"></script>
         <div className="container">
           <h1 className="title">React Movie Search</h1>
           <SearchMovies />
