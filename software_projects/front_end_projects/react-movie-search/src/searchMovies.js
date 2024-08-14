@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./searchMovies.css";
 export default function SearchMovies() {
   const [query, setQuery] = useState('');
