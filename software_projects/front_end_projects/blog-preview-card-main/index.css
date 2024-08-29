@@ -1,41 +1,92 @@
 body {
-    font-family: "Outfit", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4d04e;
-    text-align: center;
-  }
-  
-  .attribution {
-    font-size: 11px;
-    color: hsl(228, 45%, 44%);
-    border: 2px solid hsl(0, 0%, 100%);
-    padding: 10px;
-    border-radius: 20px;
-    width: 320px;
-    height: 499px;
-    background-color: hsl(0, 0%, 100%);
-  }
-  
-  .qr-image img {
-    border-radius: 10px;
-    margin-bottom: 20px;
-    width: 288px;
-    height: auto;
-  }
-  
-  .header-content {
-    font-weight: 700;
-    font-size: 20px;
-    color: hsl(218, 44%, 22%);
-  }
-  
-  .text-content {
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: 40px;
-    color: hsl(216, 15%, 48%);
-  }
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4d04e;
+}
+
+.attribution {
+  font-size: 11px;
+  color: hsl(228, 45%, 44%);
+  border: 2px solid hsl(0, 0%, 100%);
+  padding: 10px;
+  border-radius: 20px;
+  width: 384px;
+  height: 522px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 1.0);
+}
+.attribution > *
+{
+  display: flex;
+  flex-direction: column;
+  row-gap: auto;
+  align-items: start;
+}
+.attribution a {
+  color: rgba(0, 0, 0, 1.0);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #f4d04e;
+}
+
+.author {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1.0);
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  padding: 0 24px;
+  margin-top: 12px;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.qr-image img {
+  border-radius: 10px;
+  width: 336px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.header-content {
+  font-weight: 700;
+  font-size: 24px;
+  color: hsl(218, 44%, 22%);
+}
+
+.text-content {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(216, 15%, 48%);
+}
+.attribution .content {
+  padding: 0 24px;
+}
+
+.learning {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1.0);
+  border: 2px solid #f4d04e;
+  background-color: #f4d04e;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.published {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1.0);
+}
