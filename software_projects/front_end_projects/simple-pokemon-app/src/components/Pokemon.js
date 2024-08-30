@@ -20,4 +20,4 @@ export function Pokemon({ pokemon }) {
             </div>
         </div>
     );
-}
+};
