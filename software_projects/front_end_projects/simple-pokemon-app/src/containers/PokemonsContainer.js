@@ -5,7 +5,7 @@ import { GET_POKEMONS } from '../graphql/get-pokemons';
 
 export function PokemonsContainer() {
     const { loading, error, data } = useQuery(GET_POKEMONS, {
-        variables: { first: 9 },
+        variables: { first: 150 },
     });
 
     if (loading) return <p>Loading...</p>;
