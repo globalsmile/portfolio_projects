@@ -143,13 +143,14 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: white;
 }
 
 .sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #f1f1f1;
+  background-color: #ecd018;
   padding: 20px 0;
   font-size: 20px;
   font-weight: bold;
