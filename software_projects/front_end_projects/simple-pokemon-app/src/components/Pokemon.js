@@ -4,7 +4,7 @@ export function Pokemon({ pokemon }) {
     return (
         <div className="pokemon">
             <div className="pokemon__name">
-                <p>{pokemon.name}</p>
+                <p>{index}. {pokemon.name}</p>
             </div>
             <div className="pokemon__meta">
                 <span>{pokemon.maxHP}</span>

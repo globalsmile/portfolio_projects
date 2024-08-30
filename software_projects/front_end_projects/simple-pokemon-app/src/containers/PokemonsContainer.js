@@ -13,8 +13,8 @@ export function PokemonsContainer() {
 
     return (
         <div className="container">
-            {data.pokemons && data.pokemons.map(pokemon => (
-                <Pokemon key={pokemon.id} pokemon={pokemon} />
+            {data.pokemons && data.pokemons.map((pokemon, index) => (
+                <Pokemon key={pokemon.id} pokemon={pokemon} index={index + 1} />
             ))}
         </div>
     );
