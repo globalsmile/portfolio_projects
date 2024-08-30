@@ -144,3 +144,14 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
 }
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #f1f1f1;
+  padding: 50px 0;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 100;
+}

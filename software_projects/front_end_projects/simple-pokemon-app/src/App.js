@@ -11,7 +11,7 @@ export default function App() {
     return (
         <ApolloProvider client={client}>
             <main>
-                <h1 className='title'>The First 150 Pokemons</h1>
+                <h1 className='title sticky'>The First 150 Pokemons</h1>
                 <PokemonsContainer />
             </main>
         </ApolloProvider>
