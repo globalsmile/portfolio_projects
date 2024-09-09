@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Title = styled.h1`
   color: #b19cd9;
+  text-align: center;
 `;
 
 const Section = styled.div`
