@@ -5,6 +5,14 @@ const Title = styled.h1`
   color: #b19cd9;
 `
 
+const Body = styled.body`
+  background-color: #CCDDEE;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+`
+
 const Section = styled.div`
   background-color: #ffffff;
   border: solid 3px grey;
@@ -27,7 +35,7 @@ const WeekdayTitle = styled.div`
 const ProgressTracker = () => {
     return (
 
-        <><Title>Progress Tracker</Title><div>
+        <Body><Title>Progress Tracker</Title><div>
             <Section>
                 <WeekdayTitle>M</WeekdayTitle>
             </Section>
@@ -49,8 +57,8 @@ const ProgressTracker = () => {
             <Section>
                 <WeekdayTitle>S</WeekdayTitle>
             </Section>
-        </div></>
-    )
+        </div></Body>
+    );
 
 };
 export default ProgressTracker;

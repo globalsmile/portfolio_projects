@@ -1,6 +1,5 @@
 import React from 'react';
 import ProgressTracker from './components/ProgressTracker';
-import './App.css';
 
 function App() {
   return (
