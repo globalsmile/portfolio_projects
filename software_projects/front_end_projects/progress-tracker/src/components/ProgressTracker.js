@@ -3,15 +3,7 @@ import styled from 'styled-components';
 
 const Title = styled.h1`
   color: #b19cd9;
-`
-
-const Body = styled.body`
-  background-color: #CCDDEE;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: sans-serif;
-`
+`;
 
 const Section = styled.div`
   background-color: #ffffff;
@@ -24,18 +16,19 @@ const Section = styled.div`
   justify-content: left;
   font-size: 40px;
   color: #ff6961;
-`
+`;
 
 const WeekdayTitle = styled.div`
   display: flex;
   justify-content: center;
   width: 50px;
   border-right: solid 3px lightgrey;
-`
+`;
+
 const ProgressTracker = () => {
     return (
 
-        <Body><Title>Progress Tracker</Title><div>
+        <><Title>Progress Tracker</Title><div>
             <Section>
                 <WeekdayTitle>M</WeekdayTitle>
             </Section>
@@ -57,7 +50,7 @@ const ProgressTracker = () => {
             <Section>
                 <WeekdayTitle>S</WeekdayTitle>
             </Section>
-        </div></Body>
+        </div></>
     );
 
 };
