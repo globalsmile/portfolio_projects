@@ -3,9 +3,13 @@ import ProgressTracker from './components/ProgressTracker';
 import './App.css'
 function App() {
   return (
-    <div className="App">
-      <ProgressTracker />
-    </div>
+    <html>
+      <head>
+      </head>
+      <body>
+        <ProgressTracker />
+      </body>
+    </html>
   );
 }
 
