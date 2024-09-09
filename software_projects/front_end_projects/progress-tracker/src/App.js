@@ -1,19 +1,11 @@
 import React from 'react';
 import ProgressTracker from './components/ProgressTracker';
-import styled from 'styled-components';
-
-const divStyle = styled.div`
-  dbackground-color: #CCDDEE;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: sans-serif;
-`;
+import './App.css'
 function App() {
   return (
-    <divStyle>
+    <div className="App">
       <ProgressTracker />
-    </divStyle>
+    </div>
   );
 }
 
