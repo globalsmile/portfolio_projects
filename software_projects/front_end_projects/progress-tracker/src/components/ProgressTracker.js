@@ -15,6 +15,7 @@ const Section = styled.div`
   border-radius: 10px;
   display: flex;
   justify-content: left;
+  align-items: center;
   font-size: 40px;
   color: #ff6961;
 `;
