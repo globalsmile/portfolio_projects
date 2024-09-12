@@ -8,18 +8,11 @@ const Body = styled.div`
   text-align: center;
   font-family: sans-serif;
   height: 100vh;
-  margin: 0;
-  padding: 0;
 `;
 
 const Title = styled.h1`
   color: #b19cd9;
-  margin: 0;
-  padding: 0; 
-`;
-
-const SectionWrapper = styled.div`
-  margin-top: 10px;
+  text-align: center;
 `;
 
 const Section = styled.div`
@@ -46,13 +39,13 @@ const ProgressTracker = () => {
   return (
     <Body>
       <Title>Progress Tracker</Title>
-      <SectionWrapper>
+      <div>
         {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((day, index) => (
           <Section key={index}>
             <WeekdayTitle>{day}</WeekdayTitle>
           </Section>
         ))}
-      </SectionWrapper>
+      </div>
     </Body>
   );
 };
