@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Body = styled.div`
   background-color: #CCDDEE;
-  display: flex;
+  display: grid;
   justify-content: center;
   text-align: center;
   font-family: sans-serif;
@@ -37,7 +37,7 @@ const WeekdayTitle = styled.div`
 const ProgressTracker = () => {
     return (
 
-        <Body><Title>Progress Tracker</Title>
+        <Body><div><Title>Progress Tracker</Title></div><div>
             <Section>
                 <WeekdayTitle>M</WeekdayTitle>
             </Section>
@@ -59,7 +59,7 @@ const ProgressTracker = () => {
             <Section>
                 <WeekdayTitle>S</WeekdayTitle>
             </Section>
-        </Body>
+        </div></Body>
     );
 
 };
