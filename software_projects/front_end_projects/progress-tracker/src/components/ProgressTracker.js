@@ -13,6 +13,8 @@ const Body = styled.div`
 const Title = styled.h1`
   color: #b19cd9;
   text-align: center;
+  margin: 0;
+  padding: 20px 0;
 `;
 
 const Section = styled.div`
