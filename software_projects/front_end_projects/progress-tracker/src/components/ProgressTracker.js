@@ -39,13 +39,11 @@ const ProgressTracker = () => {
   return (
     <Body>
       <Title>Progress Tracker</Title>
-      <div>
         {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((day, index) => (
           <Section key={index}>
             <WeekdayTitle>{day}</WeekdayTitle>
           </Section>
         ))}
-      </div>
     </Body>
   );
 };
