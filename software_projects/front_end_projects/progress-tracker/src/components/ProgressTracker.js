@@ -1,6 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Body = styled.div`
+  background-color: #CCDDEE;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+  height: 100vh
+`;
 const Title = styled.h1`
   color: #b19cd9;
   text-align: center;
@@ -29,7 +37,7 @@ const WeekdayTitle = styled.div`
 const ProgressTracker = () => {
     return (
 
-        <><Title>Progress Tracker</Title><div>
+        <Body><Title>Progress Tracker</Title><div>
             <Section>
                 <WeekdayTitle>M</WeekdayTitle>
             </Section>
@@ -51,7 +59,7 @@ const ProgressTracker = () => {
             <Section>
                 <WeekdayTitle>S</WeekdayTitle>
             </Section>
-        </div></>
+        </div></Body>
     );
 
 };
