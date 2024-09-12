@@ -37,7 +37,7 @@ const WeekdayTitle = styled.div`
 const ProgressTracker = () => {
     return (
 
-        <Body><Title>Progress Tracker</Title><div>
+        <Body><Title>Progress Tracker</Title>
             <Section>
                 <WeekdayTitle>M</WeekdayTitle>
             </Section>
@@ -59,7 +59,7 @@ const ProgressTracker = () => {
             <Section>
                 <WeekdayTitle>S</WeekdayTitle>
             </Section>
-        </div></Body>
+        </Body>
     );
 
 };
