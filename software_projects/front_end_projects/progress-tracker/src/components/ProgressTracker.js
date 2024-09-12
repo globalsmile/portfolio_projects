@@ -7,7 +7,6 @@ const Body = styled.div`
   justify-content: center;
   text-align: center;
   font-family: sans-serif;
-  height: 100vh
 `;
 const Title = styled.h1`
   color: #b19cd9;
