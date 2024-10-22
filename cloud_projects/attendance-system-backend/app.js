@@ -1,7 +1,7 @@
 import express from 'express';
 import { json } from 'body-parser';
-import userRoutes from './routes/user';
-import attendanceRoutes from './routes/attendance';
+import userRoutes from './routes/user.js';
+import attendanceRoutes from './routes/attendance.js';
 const app = express();
 require('dotenv').config();
 
