@@ -1,6 +1,8 @@
 import { createConnection } from 'mysql';
+import dotenv from 'dotenv';
 
-require('dotenv').config();
+dotenv.config();
+
 const dbPassword = process.env.DB_PASSWORD;
 const connection = createConnection({
   host: 'localhost',
@@ -8,8 +10,13 @@ const connection = createConnection({
   password: dbPassword,
   database: 'attendance_system'
 });
+
 connection.connect((err) => {
-  if (err) throw err;
+  if (err) {
+    console.error('Error connecting to MySQL:', err);
+    return;
+  }
   console.log('Connected to MySQL database');
 });
+
 export default connection;
