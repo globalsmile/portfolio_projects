@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from .models import Student, AttendanceRecord
 
 def home(request):
-    return render(request, 'core/home.html')
+    return render(request, 'core/index.html')
 
 @login_required
 def dashboard(request):
